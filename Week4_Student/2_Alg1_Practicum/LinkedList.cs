@@ -21,27 +21,7 @@ namespace Alg1_Practicum
 
         public void InsertHead(NAW naw)
         {
-            //Voeg een link aan het begin
-            //Pas de huidige eerste aan als tweede
-            Link newLink = new Link { Naw = naw };
-
-            if (_first != null)
-            {
-                newLink.Next = _first;
-                newLink.Next.Naw = _first.Naw;
-                _first= newLink;
-            }
-            else
-            {
-                _first = newLink;
-                _first.Next = _last;
-
-                _last = newLink;
-                _last.Naw = naw;
-
-            }
-            _length++;
-            
+            throw new NotImplementedException();
         }
 
         public void RemoveHead()
